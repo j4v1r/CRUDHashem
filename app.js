@@ -1,13 +1,21 @@
+const PORT = process.env.PORT || 3000
+const DB_HOST = process.env.DB_HOST || 'localhost'
+const DB_USER = process.env.DB_USER || 'root'
+const DB_PASSWORD = process.env.DB_PASSWORD || 'n0m3l0'
+const DB_NAME = process.env.DB_NAME || 'pokemones'
+const DB_PORT = process.env.DB_PORT || 3306
+
 const express = require('express');
 const mysql = require('mysql2');
 let bodyParser = require('body-parser');
 let app = express();
 
 let con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'n0m3l0',
-    database: 'pokemones',
+    host:DB_HOST,
+    user:DB_USER,
+    password:DB_PASSWORD,
+    port:DB_PORT,
+    database:DB_NAME,
 })
 
 app.use(express.static('public'))
@@ -159,6 +167,6 @@ app.get('/delPok', (req, res) => {
     })
 })
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
     console.log("Servidor escuchando en el puerto 4000")
 })
