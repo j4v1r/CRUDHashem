@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../validacion.js"></script>
+    <title>Maestra Pongame 10</title>
+</head>
+<body>
+    <div class="titulo">
+        <p>
+            <h1><img src="img/logo.png" width="250" height="100"></h1>
+        </p>
+    </div>
+    <div class="uno">
+        <form action="/addPok" method="post" class="formulario" onsubmit="return validar(event);">
+            <table>
+                <tr>
+                    <th><h1 class="texto">Registrar Pokémon</h1></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="name"  id="name" class="campos" placeholder="Nombre" onkeypress="return validar(event)">
+                    </td>
+                    <td>
+                        <input type="text" name="region" id="region" class="campos" placeholder="Región" onkeypress="return validar(event)">
+                    </td>
+                    <td>
+                        <input type="text" name="tipo" id="tipo" class="campos" placeholder="Tipo/s" onkeypress="return validar(event)">
+                    </td>
+                    <td><input type="submit" value="Registrar" class="boton" onsubmit="return validar(event)"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="dos">
+        <form action="/getPok" class="formulario">
+            <table>
+                <tr>
+                    <th><h1 class="texto">Consultar Pokémones:</h1></th>
+                    <td><input type="submit" value="Consultar" class="boton"></td>
+                </tr>
+                <tr>
+                    <td><a href="editar.html" class="texto">Editar Pokemon</a></td>
+                </tr>
+            </table>
+        </form>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&family=Ubuntu:wght@300&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #1ff3da 0, #1ffbf0 25%, #00e1ff 50%, #1865d8 75%, #0e22d4 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.formulario, .texto2{
+    background: rgba(255, 255, 255, 0);
+    width: 60%;
+    height: 100%;
+    margin-top: 6%;
+    box-shadow: 0 0.1em 0.1em rgba(0,0,0, 0.5);
+    padding: 2%;
+    align-items: center;
+}
+
+.texto{
+    font-size: 30px;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+.texto2{
+    font-size: 15px;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+.campos{
+    width: 80%;
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid #7d96e8;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 3em;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.campos:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+.boton{
+    background-color: #7d96e8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.boton:hover{
+    background-color: #647bc5;
+}
+
+.titulo, .uno, .dos, .tablita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
